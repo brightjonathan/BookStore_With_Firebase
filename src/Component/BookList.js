@@ -59,7 +59,7 @@ const BookList = ({getBookId, isAuth }) => {
               {
                 isAuth && doc.USER.id === auth.currentUser.uid && (
                   <>
-                   {/* <td> <Button variant="secondary" className="edit" onClick={(e)=>{getBookId(doc.id)}}> Edit </Button> </td> */}
+                   <td> <Button variant="secondary" className="edit" onClick={(e)=>{getBookId(doc.id)}}> Edit </Button> </td>
                    <td> <Button  variant="danger" className="delete" onClick={(e)=>{deleteHandler(doc.id)}} > Delete </Button> </td>
                   </>
                 )
